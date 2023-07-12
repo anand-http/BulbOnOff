@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb On Off</title>
+    <link rel="icon" type="image/x-icon" href="/bulbOn.png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #30356E;
+            height: 100vh;
+            color: white;
+        }
+
+        .btnWrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button {
+            padding: 12px 25px;
+
+            border: none;
+            background-color: aqua;
+            border-radius: 7px;
+            cursor: pointer;
+            font-size: 21px;
+        }
+
+        .box {
+            text-align: center;
+
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        button:hover {
+            background-color: white;
+        }
+        img{
+            width: 80%;
+       
+            margin-bottom: 20px;
+
+        }
+        .box{
+            padding: 10px;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Turn the Bulb On and Off</h1>
+
+            <div class="img">
+                <img id="bulb" src="./bulbOff.png" alt="Bulb Off">
+                
+            </div>
+            <div class="btnWrapper">
+                <button onclick="document.getElementById('bulb').src='bulbOn.png' ">Bulb On</button>
+                <button onclick="document.getElementById('bulb').src='bulbOff.png' ">Bulb Off</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
